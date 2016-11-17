@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+		body,ul,h2{margin:0;padding: 0;}
+			body{margin: 0; font-size: 20px;font-family: "微软雅黑";}
+			.banner{width: 100%;}
+			.banner img{width: 100%;vertical-align: top;}
+			.top{width: 100%;height: 50px;background: #129bf0;line-height: 50px;}
+			.t_left{float: left;width: 50%;}
+			.t_left a{display: inline-block;width: 40px;height: 40px;margin: 5px 10px 0px 5px;float: left;}
+			.model{font-size: .8rem;cursor: pointer;}
+			.model span{padding: 0px 5px;border: 1px solid #0482da;border-radius: 3px;}
+			.active{color: #fff;margin-right: -5px;}
+			.t_right{width: 50%;float: right;}
+			.t_right a{margin-right: 10px;display: inline-block;float: right;}
+			.nav{overflow: hidden;}
+			.n_top,.n_bottom{width: 100%;margin-top: 10px;}
+			.n_top li,.n_bottom li{float: left;list-style: none;width: 16.66%;line-height: 32px;cursor: pointer;text-align: center;font-size: 17px;}
+			.fImg{width: 100%;margin-top: 10px;}
+			
+			.fImg li{list-style: none;width: 100%;}
+			.fImg li img{vertical-align: top;width: 100%;}
+			.content{width: 100%;}
+			.mark{color: #129bf0;overflow: hidden;border-bottom: 1px solid #ccc;margin:10px;padding-bottom: 8px;}
+			.mark h2{float:left;font-size: 20px;}
+			.mark span{float: right;font-size: 16px;}
+			.mark strong{font-size: 20px;}
+			.news{width: 1000px;}
+			.n_left,.n_right{width: 500px;height:500px ;float: left;}
+			.n_left{background: #ff0;}
+			.n_right{background: #f60;}
+			@media only screen and (min-width:1000px ) {
+				.news{width: 100%;}
+				.n_left{width: 50%;}
+				.n_right{width: 50%;}
+			}
+			@media only screen and (max-width: 1000px) {
+				.news{width: 100%;}
+				.n_left{width: 50%;}
+				.n_right{width: 50%;}
+			}
+			@media only screen and (max-width: 530px) {
+				.n_right{display: none;}
+				.n_left{width: 100%;}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="banner"><img src="img/banner.jpg"></div>
+		<div class="top">
+			<div class="t_left">
+				<a><img src="img/sinalogo.png"></a>
+				<div class="model">
+					<span class="active">触屏版</span>
+					<span>极速版</span>
+				</div>
+			</div>
+			<div class="t_right">
+				<a><img src="img/三横线.png"></a>
+				<a><img src="img/我的.png" width="22px" height="22px"></a>
+				<a><img src="img/太阳.png"></a>		
+			</div>
+		</div>
+		<div class="nav">
+			<ul class="n_top">
+				<li>新闻</li>
+				<li>财经</li>
+				<li>体育</li>
+				<li>娱乐</li>
+				<li>军事</li>
+				<li>教育</li>
+			</ul>
+			<ul class="n_bottom">
+				<li>博客</li>
+				<li>科技</li>
+				<li>视频</li>
+				<li>汽车</li>
+				<li>房产</li>
+				<li style="font-size: 26px;">∨</li>
+			</ul>
+		</div>
+		<div class="fImg">
+			<ul id="ul1">
+				<li><img src="img/1.jpg"></li>
+			</ul>
+		</div>
+		<div class="content">
+			<div class="mark">
+				<h2>今日要闻</h2>
+				<span><strong>1</strong>/2</span>
+			</div>
+			<div class="news">
+				<div class="n_left"></div>
+				<div class="n_right"></div>
+			</div>
+		</div>
+	</body>
+</html>
